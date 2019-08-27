@@ -111,6 +111,10 @@ for i in bur :  #가장 많은 벌점이 쌓인 벌점 항목 찾기
     if bur[i] == max(bur.values()) :
         most2 = i
 print('당신의 벌점은',score,'점 입니다')
+if score > 10 and score < 20:
+    print('1주일 퇴사까지',20-score,'점 남았습니다. 주의해주세요.')
+if score > 30 and score < 40:
+    print('2주일 퇴사까지',40-score,'점 남았습니다. 주의해주세요.')
 print('당신은 ',name[most],' 에 가장 많이 걸렸고 ',name[most2],' 에 가장 많은 벌점을 받았습니다')
 a = input('당신이 알고싶은 벌점항목을 입력해주세요')
 print('당신이 ',name[a],' 로 걸린 횟수는 ',num[a],'점 , 받은 벌점은 ',bur[a],' 점 입니다')
